@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="login.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | PEERSPHERE</title>
@@ -8,10 +9,9 @@
       function validateLogin() {
         var userInput = document.getElementById("userInput").value;
         var password = document.getElementById("password").value;
-        var usernamePattern = /^[a-z0-9_.]+$/;
-        var emailPattern = /^[0-9]{13}@paruluniversity\.ac\.in$/;
-        if (!usernamePattern.test(userInput) && !emailPattern.test(userInput)) {
-          alert("Enter a valid username (lowercase letters, numbers, _ or .) or college email (13 digits, e.g., 2305101010154@paruluniversity.ac.in).");
+
+        if (!userInput) {
+          alert("Please enter your username or college email.");
           return false;
         }
         if (!password) {
@@ -36,14 +36,17 @@
         <br>
 
         <label for="password">Enter Password:</label>
-        <input type="password" id="password" name="password" required>
+        <input 
+          type="password" 
+          id="password" 
+          name="password" 
+          required
+          title="Enter your password">
 
         <br>
 
         <button type="submit">Login</button>
     </form>
-
-    <br>
 
     <p>
       Don't have an account? <a href="../1 - signup_page/signup.html">Sign Up</a>

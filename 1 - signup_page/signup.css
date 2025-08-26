@@ -1,0 +1,17 @@
+body { /* just to make all content centered */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+form { /* styles for the form container */
+  text-align: center;
+}
+
+form label,
+form input { /* styles for form elements */
+  display: block;
+  margin: 0 auto;
+}
