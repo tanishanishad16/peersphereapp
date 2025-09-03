@@ -1,85 +1,68 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
-  background: #f4f6f9;
+}
+
+body {
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
 }
 
 .container {
   background: #fff;
   padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 350px;
   text-align: center;
 }
 
-.container h2 {
+h2 {
   margin-bottom: 20px;
+  color: #333;
 }
 
 .input-group {
   margin-bottom: 15px;
-  text-align: left;
 }
 
 .input-group label {
   display: block;
   font-size: 14px;
   margin-bottom: 5px;
+  color: #333;
 }
 
 .input-group input {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 5px;
   outline: none;
-  font-size: 14px;
 }
 
 .input-group input:focus {
-  border-color: #4a90e2;
-}
-
-.error {
-  color: red;
-  font-size: 12px;
-  margin-top: 4px;
-  display: none;
-}
-
-.input-group small {
-  display: block;
-  margin-top: 5px;
-  font-size: 12px;
-}
-
-.input-group small a {
-  color: #4a90e2;
-  text-decoration: none;
-}
-
-.input-group small a:hover {
-  text-decoration: underline;
+  border-color: #007bff;
 }
 
 .btn {
   width: 100%;
   padding: 12px;
-  background: #000000;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+  background: #000;
+  color: #fff;
   font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .btn:hover {
-  background: #6f7376;
+  background: #333;
 }
 
 .extra-links {
@@ -88,7 +71,7 @@ body {
 }
 
 .extra-links a {
-  color: #4a90e2;
+  color: #007bff;
   text-decoration: none;
 }
 

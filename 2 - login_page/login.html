@@ -3,52 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page | PEERSPHERE</title>
+  <title>Log In | PEERSPHERE</title>
   <link rel="stylesheet" href="login.css">
 </head>
 <body>
   <div class="container">
-    <h2>Login</h2>
+    <h2>Log In</h2>
     <form id="loginForm">
+
       <div class="input-group">
-        <label>Username or Email</label>
-        <input type="text" id="loginInput" placeholder="Enter your username or email" required>
+        <label>Username</label>
+        <input type="text" id="username" placeholder="Enter your username" required>
       </div>
+
       <div class="input-group">
         <label>Password</label>
-        <input type="password" id="loginPassword" placeholder="Enter your password" required>
-        <small><a href="../13 - forgot_password_page/forgot_password.html">Forgot password?</a></small>
+        <input type="password" id="password" placeholder="Enter your password" required>
       </div>
-      <button type="submit" class="btn">Login</button>
+
+      <button type="submit" class="btn">Log In</button>
+
       <div class="extra-links">
+        <p><a href="../13 - forgot_password_page/forgot_password.html">Forgot Password?</a></p>
+
+        <br>
+        
         <p>Don't have an account? <a href="../1 - signup_page/signup.html">Sign Up</a></p>
       </div>
     </form>
   </div>
 
-  <script>
-    document.getElementById("loginForm").addEventListener("submit", function(e) {
-      e.preventDefault();
-
-      const loginInput = document.getElementById("loginInput").value.trim();
-      const password = document.getElementById("loginPassword").value;
-
-      const emailPattern = /^[0-9]{13}@paruluniversity\.ac\.in$/;
-      const usernamePattern = /^[a-z0-9._]+$/;
-
-      if (!(emailPattern.test(loginInput) || usernamePattern.test(loginInput))) {
-        alert("Enter a valid university email or username.");
-        return;
-      }
-
-      if (password.length < 8) {
-        alert("Password must be at least 8 characters long.");
-        return;
-      }
-
-      alert("✅ Login Successful!");
-      this.submit();
-    });
-  </script>
+  <script src="login.js"></script>
 </body>
 </html>
