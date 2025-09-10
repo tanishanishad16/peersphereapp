@@ -17,9 +17,40 @@ header {
   padding: 15px 30px;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-bar input {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.search-bar button {
+  background: #555;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background: #999;
+}
+
 .nav-links {
   display: flex;
-  justify-content: flex-end;
   gap: 20px;
 }
 
@@ -31,6 +62,27 @@ header {
 
 .nav-links li a:hover {
   color: #ccc;
+}
+
+.about-section {
+  flex: 1;
+  padding: 50px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-section h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.about-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 15px;
 }
 
 footer {
